@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Produto.ResultadoActivity">
+
+    <TextView
+        android:id="@+id/btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Voltar"
+        android:textColor="#0D5DEE"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_excluir" />
+
+    <Button
+        android:id="@+id/btn_editar"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:background="#000"
+        android:text="Editar"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_preco" />
+
+    <Button
+        android:id="@+id/btn_excluir"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FDFCFC"
+        android:text="Excluir"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editar" />
+
+    <EditText
+        android:id="@+id/txt_preco"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:background="#FAFAFA"
+        android:ems="10"
+        android:hint="Preço"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_quantidade" />
+
+    <EditText
+        android:id="@+id/txt_quantidade"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:background="#FAFAFA"
+        android:ems="10"
+        android:hint="Quantidade no estoque"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_produto" />
+
+    <EditText
+        android:id="@+id/txt_produto"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+
+        android:layout_marginTop="30dp"
+        android:background="#FAFAFA"
+        android:ems="10"
+        android:hint="Produto"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Dados do produto"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

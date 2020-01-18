@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prova">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activity.Produto.ResultadoActivity" android:label="Resultado da Pesquisa"
+            android:parentActivityName=".Activity.Produto.MenuActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Activity.Produto.PesquisarActivity"
+            android:label="Pesquisar produtos"
+            android:parentActivityName=".Activity.Produto.MenuActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Activity.Produto.ListarActivity"
+            android:label="Listar produtos"
+            android:parentActivityName=".Activity.Produto.MenuActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Activity.Produto.InserirActivity"
+            android:label="Cadastrar produtos"
+            android:parentActivityName=".Activity.Produto.MenuActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name=".Activity.Produto.MenuActivity" />
+        <activity android:name=".Activity.Usuario.LoginActivity" />
+        <activity android:name=".Activity.Usuario.CadastroActivity" />
+        <activity android:name=".Activity.Usuario.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
